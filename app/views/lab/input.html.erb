@@ -1,0 +1,8 @@
+<h1 class = 'h1'>Лабораторная работа 9</h1>
+<%= form_with url: result_path do |form|%>
+<%= form.label('Число:')%>
+<%= form.number_field(:numb)%>
+<%= form.submit('Проверить', id: 'check_button')%>
+<% end%>
+<br>
+<div id='result-container'></div>
